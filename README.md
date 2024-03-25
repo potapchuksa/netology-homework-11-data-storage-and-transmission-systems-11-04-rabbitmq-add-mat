@@ -2,7 +2,9 @@
 
 
 ```
-- для запуска RabbitMQ переименуйте файл .env_example в .env
+для запуска RabbitMQ переименуйте файл .env_example в .env и выполните:
+- docker compose up -d (если используете docker compose версии > 2)
+- docker-compose up -d (если используете docker compose версии < 2)
 ```
 
 
