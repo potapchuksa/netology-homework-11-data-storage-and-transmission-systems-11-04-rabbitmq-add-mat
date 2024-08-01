@@ -22,7 +22,7 @@
 ```
 
 
-'''
+```
 пользователи:
 rabbitmqctl list_users
 rabbitmqctl add_user test test
@@ -31,4 +31,4 @@ rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
 
 политика репликации:
 rabbitmqctl set_policy ha-all "" '{"ha-mode":"all","ha-sync-mode":"automatic"}'
-'''
+```
