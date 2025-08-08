@@ -65,3 +65,4 @@ rabbitmqctl set_policy ha-all "" '{"ha-mode":"all","ha-sync-mode":"automatic"}'
 
 * image: rabbitmq:3.10.7-management не смог запустить даже отдельным Docker контейнером. Вернее он запускается, но к web интерфейсу подключиться невозможно. При запуске часто ловил внизу экрана на оранжевом фоне белыми буквами ошибку **undefined: There is no template at js/tmpl/login.ejs undefined**
 * Без плагина rabbitmq_peer_discovery_classic_config кластер не собирается, а автор его не указал.
+* в конфигурационном файле RabbitMQ нельзя использовать настройку management.load_definitions, так как её RabbitMQ не распознаёт и при попытке загрузить конфигурацию сервер падает. Правильная настройка - load_definitions.
